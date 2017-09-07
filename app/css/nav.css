@@ -28,16 +28,18 @@ a { text-decoration: none; color: inherit; }
 
 .item:hover { transform: translate(0, -5px); }
 
-.share { display: flex; align-items: center; justify-content: center; color: #fff; background-color: #15aef0; height: 200px; width: 80%; margin: 0 0 50px 0; font-size: 40px; }
+.share { color: #fff; background-color: #15aef0; height: 200px; width: 80%; margin: 0 0 50px 0; font-size: 40px; text-align: center; }
+
+.share a { line-height: 200px; }
 
 .qr-code-box { margin: 0 0 50px 0; }
 
-.qr-code { width: 296px; height: 296px; background-image: url(../img/qr-code.png); }
+.qr-code { margin: 25px; float: right; width: 148px; height: 148px; background-size: 148px; background-image: url(../img/qr-code.png); }
 
 .footer { width: 80%; display: flex; height: 100px; flex-direction: column; align-items: center; justify-content: center; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) { /* 当设备像素比不小于1.5的时候... */
-  .qr-code { background-size: 296px; background-image: url(../img/qr-code@2x.png); } }
+  .qr-code { background-size: 148px; background-image: url(../img/qr-code@2x.png); } }
 
 @media (max-width: 1600px) { .item { width: calc(100% / 4 - 40px); } }
 

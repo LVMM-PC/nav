@@ -91,15 +91,16 @@ a {
 }
 
 .share {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: #fff;
   background-color: #15aef0;
   height: 200px;
   width: 80%;
   margin: 0 0 50px 0;
   font-size: 40px;
+  text-align: center;
+  a {
+    line-height: 200px;
+  }
 }
 
 .qr-code-box {
@@ -107,8 +108,11 @@ a {
 }
 
 .qr-code {
-  width: 296px;
-  height: 296px;
+  margin: 25px;
+  float: right;
+  width: 148px;
+  height: 148px;
+  background-size: 148px;
   background-image: url(../img/qr-code.png);
 }
 
@@ -127,7 +131,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
   /* 当设备像素比不小于1.5的时候... */
 
   .qr-code {
-    background-size: 296px;
+    background-size: 148px;
     background-image: url(../img/qr-code@2x.png);
   }
 
