@@ -38,7 +38,7 @@ a {
 
 .main {
   width: 80%;
-  margin: 0 0 100px 0;
+  margin: 0 0 50px 0;
 }
 
 .list {
@@ -46,6 +46,7 @@ a {
   padding: 20px 0 0 20px;
   display: flex;
   flex-flow: row wrap;
+  margin-bottom: 40px;
 }
 
 .item {
@@ -96,12 +97,12 @@ a {
   background-color: #15aef0;
   height: 200px;
   width: 80%;
-  margin: 0 0 100px 0;
+  margin: 0 0 50px 0;
   font-size: 40px;
 }
 
 .qr-code-box {
-  margin: 0 0 100px 0;
+  margin: 0 0 50px 0;
 }
 
 .qr-code {
