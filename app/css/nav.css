@@ -20,7 +20,7 @@ a { text-decoration: none; color: inherit; }
 
 .item .title { color: #2299ee; font-weight: bold; line-height: 30px; font-size: 0; padding: 5px 0; }
 
-.item .title img { display: inline-block; vertical-align: top; width: 40px; height: 40px; margin: 0 5px 0 0; margin-top: -5px; }
+.item .title img { border-radius: 4px; display: inline-block; vertical-align: top; width: 40px; height: 40px; margin: 0 5px 0 0; margin-top: -5px; }
 
 .item .title .text { font-size: 14px; display: inline; }
 
