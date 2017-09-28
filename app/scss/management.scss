@@ -221,6 +221,7 @@ a {
   }
   .list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     font-size: 18px;
     li {
@@ -309,6 +310,9 @@ a {
 }
 
 .custom {
+  background-image: url(../img/management/custom.jpg);
+  background-position: center center;
+  background-size: cover;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -429,6 +433,16 @@ a {
       }
     }
   }
+  .team{
+    .list{
+      li{
+        p{
+          margin-top: 10px;
+        }
+        margin-bottom: 40px;
+      }
+    }
+  }
   .custom {
     .form {
       flex-direction: column;
@@ -440,7 +454,7 @@ a {
         border-radius: 22.5px 22.5px 0 0;
       }
       .btn {
-        border-radius: 0 0 22.5px 22.5px;
+        //border-radius: 0 0 22.5px 22.5px;
         width: 100%;
       }
     }
