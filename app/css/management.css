@@ -39,7 +39,7 @@ a { cursor: pointer; color: inherit; text-decoration: none; }
 
 .banner .content { position: relative; padding: 270px 0; text-align: center; color: #fff; display: flex; flex-direction: column; justify-content: center; align-items: center; }
 
-.banner .logo { width: 64px; height: 64px; border-radius: 50%; margin-bottom: 15px; background-image: url(../img/management/logo.svg); }
+.banner .logo { width: 64px; height: 64px; border-radius: 50%; margin-bottom: 35px; background-image: url(../img/management/logo.svg); }
 
 .banner h1 { max-width: 90%; font-size: 52px; line-height: 56px; margin-bottom: 25px; }
 
@@ -71,9 +71,9 @@ a { cursor: pointer; color: inherit; text-decoration: none; }
 
 .team .list li { margin: 0 30px 40px 30px; }
 
-.team .list img { width: 75px; height: 75px; border-radius: 50%; box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2); }
+.team .list img { width: 125px; height: 125px; border-radius: 50%; }
 
-.team .list p { margin-top: 10px; }
+.team .list p { margin-top: 20px; }
 
 .slide { padding: 50px 0 0 0; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
 
