@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/** author: Sheng JIANG date: 2017-10-18 */
+body { color: #333333; font-family: "Helvetica Neue", "Arial", "PingFang SC", "Microsoft Yahei", "SimSun", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: normal; }
+
+p { margin: 0; }
+
+ul { margin: 0; padding: 0; }
+
+li { list-style: none; }
+
+a { cursor: pointer; color: inherit; text-decoration: none; }
+
+.everything { line-height: 20px; font-size: 14px; color: #666; }
+
+.header { display: flex; flex-direction: column; align-items: center; background-color: #f5f5f5; }
+
+.logo-wrap { display: flex; justify-content: center; align-items: center; padding-top: 35px; height: 200px; line-height: 48px; }
+
+.logo-wrap .logo { background-image: url(../img/hosts/logo.png); width: 48px; height: 48px; background-color: #45c4f3; margin-right: 30px; }
+
+.logo-wrap h1 { font-size: 42px; }
+
+.download { padding: 20px 0 20px 0; display: flex; align-items: center; flex-direction: column; height: 150px; width: 280px; }
+
+.download a { display: flex; justify-content: center; align-items: center; font-size: 34px; color: #fff; width: 100%; background-color: #45c4f3; height: 76px; border-radius: 50px; }
+
+.download a:hover { background-color: #3dafd9; }
+
+.download .info { display: flex; align-items: center; height: 30px; font-size: 12px; width: 80%; justify-content: space-between; }
+
+.platform { width: 1000px; display: flex; flex-wrap: wrap; justify-content: space-around; }
+
+.platform li { width: 50%; display: flex; flex-direction: column; align-items: center; margin-bottom: 40px; }
+
+.platform .logo { width: 120px; height: 120px; }
+
+.platform .windows .logo { background-image: url(../img/hosts/windows.png); }
+
+.platform .mac-os .logo { background-image: url(../img/hosts/mac-os.png); }
+
+.platform h3, .platform p { line-height: 40px; }
+
+.platform h3 { font-size: 24px; }
+
+.guide { margin-top: 100px; display: flex; flex-direction: column; flex-wrap: wrap; align-items: center; counter-reset: sectioncounter; }
+
+.guide section { width: 1000px; display: flex; flex-wrap: wrap; margin-bottom: 40px; }
+
+.guide section .left, .guide section .right { width: 50%; }
+
+.guide section h2 { position: relative; font-size: 14px; padding: 0 70px; color: #333; }
+
+.guide section h2:before { left: 30px; top: -5px; position: absolute; content: counter(sectioncounter) "."; counter-increment: sectioncounter; width: 32px; height: 32px; border-radius: 16px; background-color: #cccccc; line-height: 32px; font-size: 16px; text-align: center; font-weight: bold; }
+
+.guide section p { padding: 0 70px; }
+
+.guide section em { color: #fff; background-color: #3dafd9; padding: 0 2px; border-radius: 2px; font-style: normal; }
+
+.guide section .left { display: flex; flex-direction: column; justify-content: center; }
+
+.guide section .right { display: flex; flex-wrap: wrap; flex-direction: column; align-items: center; justify-content: center; }
+
+.guide .extensions .pic { background-image: url(../img/hosts/addr.png); width: 500px; height: 119px; }
+
+.guide .add .pic { background-image: url(../img/hosts/add.png); width: 368px; height: 210px; }
+
+.guide .launch .pic { background-image: url(../img/hosts/launch.png); width: 225px; height: 125px; }
+
+.screen { background-color: #fff; margin: 50px 0 100px 0; display: flex; justify-content: center; align-items: center; }
+
+.screen .window { display: flex; justify-content: center; align-items: center; position: relative; }
+
+.screen img { max-width: 100%; }
+
+.footer { display: flex; justify-content: center; align-items: center; flex-direction: column; height: 200px; background-color: #f5f5f5; }
+
+.footer p { line-height: 40px; }
+
+.footer p em { margin-right: 40px; font-style: normal; }
+
+@media (max-width: 1000px) { .platform { width: 100%; }
+  .platform li { width: 100%; }
+  .guide section { width: 100%; display: flex; align-items: center; }
+  .guide section h2, .guide section p { max-width: 90%; margin: 0 5px 0 40px; padding: 0; }
+  .guide section h2:before { left: -35px; }
+  .guide section .left { width: 100%; margin-bottom: 10px; }
+  .guide section .right { width: 100%; }
+  .guide section .right img { max-width: 90%; } }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) { /* 当设备像素比不小于1.5的时候... */
+  .logo-wrap .logo { background-image: url(../img/hosts/logo@2x.png); background-size: cover; }
+  .platform .windows .logo { background-size: cover; background-image: url(../img/hosts/windows@2x.png); }
+  .platform .mac-os .logo { background-size: cover; background-image: url(../img/hosts/mac-os@2x.png); }
+  .guide .extensions .pic { background-image: url(../img/hosts/addr@2x.png); background-size: cover; }
+  .guide .add .pic { background-image: url(../img/hosts/add@2x.png); background-size: cover; }
+  .guide .launch .pic { background-image: url(../img/hosts/launch@2x.png); background-size: cover; } }

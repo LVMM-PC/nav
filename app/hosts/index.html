@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hosts修改工具</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/hosts.css">
+</head>
+<body>
+<div class="everything">
+
+    <header class="header">
+        <section class="logo-wrap">
+            <div class="logo"></div>
+            <h1>
+                Hosts切换工具
+            </h1>
+        </section>
+        <section class="download">
+            <a target="_blank" href="https://www.fedrobots.com/tool/host/host.crx">立即下载</a>
+            <div class="info">
+                <div>
+                    大小：46K
+                </div>
+                <div>
+                    更新日期： 2017/06/09
+                </div>
+            </div>
+        </section>
+        <ul class="platform">
+            <li class="windows">
+                <div class="logo"></div>
+                <h3>Windows</h3>
+                <p>* Tested on Windows 10</p>
+            </li>
+            <li class="mac-os">
+                <div class="logo"></div>
+                <h3>macOS</h3>
+                <p>* Tested on macOS 10.13</p>
+            </li>
+        </ul>
+    </header>
+
+    <article class="guide">
+
+        <section class="extensions">
+            <div class="left">
+                <h2>扩展程序</h2>
+                <p>打开谷歌浏览器，在地址栏输入：chrome://extensions/ 进入扩展程序页面。</p>
+            </div>
+            <div class="right">
+                <img src="../img/hosts/addr.png"
+                     srcset="../img/hosts/addr@2x.png 2x" alt="">
+            </div>
+        </section>
+
+        <section class="add">
+            <div class="left">
+                <h2>拖拽添加</h2>
+                <p>把下载好的插件：host.crx，拖拽到扩展程序页面里，显示"拖放以安装"后松开鼠标，浏览器会出现APP安装提醒，点击"添加应用"，即可完成安装。 </p>
+            </div>
+            <div class="right">
+                <img src="../img/hosts/add.png"
+                     srcset="../img/hosts/add@2x.png 2x" alt="">
+            </div>
+        </section>
+
+        <section class="launch">
+            <div class="left">
+                <h2>启动神器</h2>
+                <p>安装完成以后，浏览器会自动进入：chrome://apps/ 的页面。右键点击 H 图标，创建桌面和任务栏快捷方式。双击快捷方式，即可运行Host神器。</p>
+            </div>
+            <div class="right">
+                <img src="../img/hosts/launch.png"
+                     srcset="../img/hosts/launch@2x.png 2x" alt="">
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h2>系统配置</h2>
+                <p>
+                    找到hosts文件，修改设置hosts文件为读写权限。文件路径如下：<br>
+                    <em>Windows系统</em><br>
+                    hosts文件路径：C:\Windows\System32\drivers\etc<br>
+                    修改读写权限方法：右键点击hosts文件，选择属性，再选择安全，点击选择管理员的用户名，然后点编辑，修改权限为完全控制，确定即可。
+                </p>
+                <p>
+                    <em>macOS系统</em><br>
+                    hosts文件路径：在任意文件夹里按住 Shift + Command + G，输入：/etc/hosts，回车即可在根目录找到。<br>
+                    修改读写权限方法：右键点击hosts文件，查看简介，滚动到最下面，点击解锁按钮，修改设置所有权限为读和写，再点击锁定就修改完成。
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h2>开始使用</h2>
+                <p>
+                    打开host神器，点击"选择系统host文件"按钮，找到系统host文件(路径同上)，就可以新建host开始使用啦。.
+                </p>
+            </div>
+        </section>
+
+    </article>
+    <div class="screen">
+        <div class="window">
+            <img src="../img/hosts/window.png"
+                 srcset="../img/hosts/window@2x.png 2x" alt="">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p><em>开发者：安云大神</em>bug反馈QQ：237364436</p>
+        <p>Copyright © 2017 <a target="_blank" href="/">Lvmama FED</a>. All rights reserved</p>
+    </footer>
+</div>
+</body>
+</html>
