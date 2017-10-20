@@ -6,7 +6,6 @@
 
 body {
   color: #333333;
-  background-color: #f5f5f5;
   font-family: "Helvetica Neue", "Arial", "PingFang SC", "Microsoft Yahei", "SimSun", sans-serif;
 }
 
@@ -33,12 +32,18 @@ a {
 
 .header {
   text-align: center;
-  margin: 20px 0 20px 0;
+  margin: 50px 0 20px 0;
+}
+
+.header h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #6B7386;
 }
 
 .main {
   width: 80%;
-  margin: 0 0 50px 0;
+  margin: 0px 0 50px 0;
 }
 
 .list {
@@ -50,13 +55,13 @@ a {
 }
 
 .item {
-  border-radius: 4px;
+  border-radius: 3px;
   color: #333;
   cursor: pointer;
-  padding: 10px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, .1), 0px 1px 2px rgba(0, 0, 0, .05);
   display: block;
-  width: calc(100% / 5 - 40px);
+  width: calc(100% / 5 - 60px);
   margin: 0 20px 20px 0;
   transition: transform 100ms;
   .title {
@@ -86,14 +91,17 @@ a {
     margin-top: 5px;
   }
   &:hover {
-    transform: translate(0, -5px);
+    box-shadow: 0 4px 20px 0 rgba(168, 182, 191, .6);
   }
 }
 
 .share {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
   color: #fff;
   background-color: #15aef0;
-  height: 200px;
   width: 80%;
   margin: 0 0 50px 0;
   font-size: 40px;
@@ -139,7 +147,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 @media (max-width: 1600px) {
   .item {
-    width: calc(100% / 4 - 40px);
+    width: calc(100% / 4 - 60px);
   }
 }
 
@@ -151,13 +159,13 @@ only screen and (min-device-pixel-ratio: 1.5) {
     width: 90%;
   }
   .item {
-    width: calc(100% / 3 - 40px);
+    width: calc(100% / 3 - 60px);
   }
 }
 
 @media (max-width: 800px) {
   .item {
-    width: calc(100% / 2 - 40px);
+    width: calc(100% / 2 - 60px);
   }
 }
 
@@ -168,6 +176,24 @@ only screen and (min-device-pixel-ratio: 1.5) {
     width: 100%;
   }
   .item {
-    width: calc(100% / 1 - 40px);
+    width: calc(100% / 1 - 60px);
   }
+}
+
+.header .logo-bg {
+  transform: rotate(75deg) translate3d(0, 0, 0);
+  background-image: linear-gradient(#2DC8F3 0, #1497E2 70%);
+  border-radius: 6px;
+  position: absolute;
+  left: -150px;
+  top: -180px;
+  width: 350px;
+  height: 350px;
+  z-index: 0;
+}
+
+.logo-i {
+  color: #ff5301;
+  font-size: 30px;
+  font-weight: 700;
 }
