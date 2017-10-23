@@ -18,13 +18,13 @@ a { cursor: pointer; color: inherit; text-decoration: none; }
 
 .logo-wrap { display: flex; justify-content: center; align-items: center; padding-top: 35px; height: 200px; line-height: 48px; }
 
-.logo-wrap .logo { background-image: url(../img/hosts/logo.png); width: 48px; height: 48px; background-color: #45c4f3; margin-right: 30px; }
+.logo-wrap .logo { background-image: url(../img/hosts/logo.png); width: 48px; height: 48px; margin-right: 20px; }
 
-.logo-wrap h1 { font-size: 42px; }
+.logo-wrap h1 { font-size: 38px; }
 
 .download { padding: 20px 0 20px 0; display: flex; align-items: center; flex-direction: column; height: 150px; width: 280px; }
 
-.download a { display: flex; justify-content: center; align-items: center; font-size: 34px; color: #fff; width: 100%; background-color: #45c4f3; height: 76px; border-radius: 50px; }
+.download a { display: flex; justify-content: center; align-items: center; font-size: 28px; color: #fff; width: 100%; background-color: #00c1de; height: 60px; border-radius: 50px; }
 
 .download a:hover { background-color: #3dafd9; }
 
