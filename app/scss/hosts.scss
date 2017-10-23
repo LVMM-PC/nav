@@ -66,11 +66,10 @@ a {
     background-image: url(../img/hosts/logo.png);
     width: 48px;
     height: 48px;
-    background-color: #45c4f3;
-    margin-right: 30px;
+    margin-right: 20px;
   }
   h1 {
-    font-size: 42px;
+    font-size: 38px;
   }
 }
 
@@ -85,11 +84,11 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 34px;
+    font-size: 28px;
     color: #fff;
     width: 100%;
-    background-color: rgb(69, 196, 243);
-    height: 76px;
+    background-color: #00c1de;
+    height: 60px;
     border-radius: 50px;
     &:hover {
       background-color: #3dafd9;
