@@ -68,6 +68,8 @@ a { text-decoration: none; color: inherit; }
 
 .tag-canvas { background-image: url(../img/tags/canvas.png); }
 
+.tag-gulp { background-image: url(../img/tags/gulp.png); }
+
 .share { display: flex; flex-direction: row; justify-content: space-around; flex-wrap: wrap; color: #fff; background-color: #15aef0; width: 80%; margin: 0 0 50px 0; font-size: 40px; text-align: center; }
 
 .share a { line-height: 200px; }
