@@ -92,7 +92,7 @@ a {
     font-size: 0;
     line-height: 20px;
     .title {
-      font-size: 14px;
+      font-size: 15px;
       display: inline;
     }
   }
@@ -112,11 +112,11 @@ a {
     flex-direction: row;
     margin-left: -12px;
     .tag {
-      border-radius: 3px;
+      border-radius: 2px;
       margin-left: 12px;
       margin-top: 8px;
-      height: 32px;
-      line-height: 32px;
+      height: 28px;
+      line-height: 28px;
       &.text {
         padding: 0 12px;
         background-color: rgba(137, 149, 199, 0.1);
@@ -124,7 +124,7 @@ a {
       }
       &.image {
         overflow: hidden;
-        width: 32px;
+        width: 28px;
         background-size: cover;
         box-shadow: 0 2px 6px 0 rgba(112, 128, 175, 0.2);
       }
