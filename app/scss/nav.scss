@@ -42,8 +42,19 @@ a {
 }
 
 .main {
-  width: 80%;
+  width: 90%;
+  max-width: 1400px;
   margin: 0px 0 50px 0;
+}
+
+.section {
+  h2 {
+    font-weight: normal;
+    line-height: 30px;
+    margin: 0 20px;
+    font-size: 18px;
+    color: #666;
+  }
 }
 
 .list {
@@ -89,7 +100,7 @@ a {
     color: #6B7386;
     font-size: 12px;
     line-height: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
   }
   &:hover {
     box-shadow: 0 4px 20px 0 rgba(168, 182, 191, .6);
@@ -99,10 +110,11 @@ a {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    margin-left: -12px;
     .tag {
       border-radius: 3px;
-      margin-right: 12px;
-      margin-bottom: 8px;
+      margin-left: 12px;
+      margin-top: 8px;
       height: 32px;
       line-height: 32px;
       &.text {
@@ -180,6 +192,22 @@ a {
   background-image: url(../img/tags/gulp.png);
 }
 
+.tag-mocha {
+  background-image: url(../img/tags/mocha.png);
+}
+
+.tag-koa {
+  background-image: url(../img/tags/koa.png);
+}
+
+.tag-redis {
+  background-image: url(../img/tags/redis.png);
+}
+
+.tag-inception {
+  background-image: url(../img/tags/inception.png);
+}
+
 .share {
   display: flex;
   flex-direction: row;
@@ -188,7 +216,8 @@ a {
   flex-wrap: wrap;
   color: #fff;
   background-color: #15aef0;
-  width: 80%;
+  width: 90%;
+  max-width: 1400px;
   margin: 0 0 50px 0;
   font-size: 40px;
   text-align: center;
@@ -212,7 +241,8 @@ a {
 }
 
 .footer {
-  width: 80%;
+  width: 90%;
+  max-width: 1400px;
   display: flex;
   height: 100px;
   flex-direction: column;
@@ -234,7 +264,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 @media (max-width: 1600px) {
   .item {
-    width: calc(100% / 2 - 60px);
+    width: calc(100% / 3 - 60px);
   }
 }
 
@@ -246,15 +276,18 @@ only screen and (min-device-pixel-ratio: 1.5) {
     width: 90%;
   }
   .item {
-    width: calc(100% / 1 - 60px);
+    width: calc(100% / 2 - 60px);
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .main,
   .share,
   .footer {
     width: 100%;
+  }
+  .item {
+    width: calc(100% / 1 - 60px);
   }
 }
 
