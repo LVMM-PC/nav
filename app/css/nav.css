@@ -18,17 +18,55 @@ a { text-decoration: none; color: inherit; }
 
 .list { background-color: #fff; padding: 20px 0 0 20px; display: flex; flex-flow: row wrap; margin-bottom: 40px; }
 
-.item { border-radius: 3px; color: #333; cursor: pointer; padding: 20px; box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.05); display: block; width: calc(100% / 5 - 60px); margin: 0 20px 20px 0; transition: transform 100ms; }
+.item { display: flex; border-radius: 3px; color: #333; cursor: pointer; padding: 20px; box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.05); width: calc(100% / 3 - 60px); margin: 0 20px 20px 0; transition: transform 100ms; }
 
-.item .title { color: #2299ee; line-height: 30px; font-size: 0; padding: 5px 0; }
+.item .icon { width: 40px; height: 40px; margin-right: 20px; }
 
-.item .title img { border-radius: 4px; display: inline-block; vertical-align: top; width: 40px; height: 40px; margin: 0 5px 0 0; margin-top: -5px; }
+.item .icon img { border-radius: 4px; display: inline-block; vertical-align: top; width: 40px; height: 40px; }
 
-.item .title .text { font-size: 14px; display: inline; }
+.item .content { color: #2299ee; font-size: 0; line-height: 20px; }
 
-.item .info { color: #6B7386; font-size: 12px; line-height: 20px; margin-top: 5px; }
+.item .content .title { font-size: 14px; display: inline; }
+
+.item .description { color: #6B7386; font-size: 12px; line-height: 20px; margin-bottom: 10px; }
 
 .item:hover { box-shadow: 0 4px 20px 0 rgba(168, 182, 191, 0.6); }
+
+.item .tags { font-size: 12px; display: flex; flex-wrap: wrap; flex-direction: row; }
+
+.item .tags .tag { border-radius: 3px; margin-right: 12px; margin-bottom: 8px; height: 32px; line-height: 32px; }
+
+.item .tags .tag.text { padding: 0 12px; background-color: rgba(137, 149, 199, 0.1); color: #8995c7; }
+
+.item .tags .tag.image { overflow: hidden; width: 32px; background-size: cover; box-shadow: 0 2px 6px 0 rgba(112, 128, 175, 0.2); }
+
+.tag-vue { background-image: url(../img/tags/vue.png); }
+
+.tag-sass { background-image: url(../img/tags/sass.png); }
+
+.tag-webpack { background-image: url(../img/tags/webpack.png); }
+
+.tag-babel { background-image: url(../img/tags/babel.png); }
+
+.tag-electron { background-image: url(../img/tags/electron.png); }
+
+.tag-jquery { background-image: url(../img/tags/jquery.png); }
+
+.tag-echarts { background-image: url(../img/tags/echarts.png); }
+
+.tag-swiper { background-image: url(../img/tags/swiper.png); }
+
+.tag-nodejs { background-image: url(../img/tags/nodejs.png); }
+
+.tag-express { background-image: url(../img/tags/express.png); }
+
+.tag-uglifyjs { background-image: url(../img/tags/uglifyjs.png); }
+
+.tag-php { background-image: url(../img/tags/php.png); }
+
+.tag-mysql { background-image: url(../img/tags/mysql.png); }
+
+.tag-canvas { background-image: url(../img/tags/canvas.png); }
 
 .share { display: flex; flex-direction: row; justify-content: space-around; flex-wrap: wrap; color: #fff; background-color: #15aef0; width: 80%; margin: 0 0 50px 0; font-size: 40px; text-align: center; }
 
@@ -43,16 +81,13 @@ a { text-decoration: none; color: inherit; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) { /* 当设备像素比不小于1.5的时候... */
   .qr-code { background-size: 148px; background-image: url(../img/qr-code@2x.png); } }
 
-@media (max-width: 1600px) { .item { width: calc(100% / 4 - 60px); } }
+@media (max-width: 1600px) { .item { width: calc(100% / 2 - 60px); } }
 
 /* Minimum width */
 @media (max-width: 1200px) { .main, .share, .footer { width: 90%; }
-  .item { width: calc(100% / 3 - 60px); } }
-
-@media (max-width: 800px) { .item { width: calc(100% / 2 - 60px); } }
-
-@media (max-width: 500px) { .main, .share, .footer { width: 100%; }
   .item { width: calc(100% / 1 - 60px); } }
+
+@media (max-width: 500px) { .main, .share, .footer { width: 100%; } }
 
 .header .logo-bg { transform: rotate(75deg) translate3d(0, 0, 0); background-image: linear-gradient(#2DC8F3 0, #1497E2 70%); border-radius: 6px; position: absolute; left: -150px; top: -180px; width: 350px; height: 350px; z-index: 0; }
 
