@@ -26,7 +26,7 @@ a { text-decoration: none; color: inherit; }
 
 .list { background-color: #fff; padding: 20px 0 0 20px; display: flex; flex-flow: row wrap; margin-bottom: 40px; }
 
-.item { display: flex; border-radius: 8px; color: #333; cursor: pointer; padding: 20px; /*box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, .1), 0px 1px 2px rgba(0, 0, 0, .05);*/ box-shadow: 0px 2px 8px 0px rgba(50, 86, 123, 0.16); width: calc(100% / 3 - 60px); margin: 0 20px 20px 0; transition: transform 100ms; }
+.item { display: flex; border-radius: 8px; color: #333; padding: 20px; /*box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, .1), 0px 1px 2px rgba(0, 0, 0, .05);*/ box-shadow: 0px 2px 8px 0px rgba(50, 86, 123, 0.16); width: calc(100% / 3 - 60px); margin: 0 20px 20px 0; transition: transform 100ms; }
 
 .item .icon { width: 40px; height: 40px; margin-right: 20px; }
 
@@ -86,6 +86,12 @@ a { text-decoration: none; color: inherit; }
 
 .tag-inception { background-image: url(../img/tags/inception.png); }
 
+.tag-html5 { background-image: url(../img/tags/html5.png); }
+
+.tag-css3 { background-image: url(../img/tags/css3.png); }
+
+.tag-es6 { background-image: url(../img/tags/es6.png); }
+
 .share { display: flex; flex-direction: row; justify-content: space-around; align-items: center; flex-wrap: wrap; color: #fff; background-color: #15aef0; width: 90%; max-width: 1400px; margin: 0 0 50px 0; font-size: 40px; text-align: center; }
 
 .share a { line-height: 50px; margin: 25px 0 25px 0; }
@@ -97,7 +103,8 @@ a { text-decoration: none; color: inherit; }
 .footer { width: 90%; max-width: 1400px; display: flex; height: 100px; flex-direction: column; align-items: center; justify-content: center; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) { /* 当设备像素比不小于1.5的时候... */
-  .qr-code { background-size: 148px; background-image: url(../img/qr-code@2x.png); } }
+  .qr-code { background-size: 148px; background-image: url(../img/qr-code@2x.png); }
+  #banner { background-image: url(../img/banner@2x.jpg); } }
 
 @media (max-width: 1600px) { .item { width: calc(100% / 3 - 60px); } }
 
