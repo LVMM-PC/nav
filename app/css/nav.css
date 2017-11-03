@@ -92,6 +92,8 @@ a { text-decoration: none; color: inherit; }
 
 .tag-es6 { background-image: url(../img/tags/es6.png); }
 
+.tag-wechat { background-image: url(../img/tags/wechat.png); }
+
 .share { display: flex; flex-direction: row; justify-content: space-around; align-items: center; flex-wrap: wrap; color: #fff; background-color: #15aef0; width: 90%; max-width: 1400px; margin: 0 0 50px 0; font-size: 40px; text-align: center; }
 
 .share a { line-height: 50px; margin: 25px 0 25px 0; }
