@@ -3,6 +3,13 @@
  * author: Sheng JIANG
  * date: 2017-09-07
  */
+@font-face {
+  font-family: 造字工房尚黑（非商用）常规体;
+  src: url('../font/MFShangHei_Noncommercial-Regular.ttf')
+}
+
+$img: url(../img/nav.png);
+$imgSize: 400px;
 
 body {
   color: #333333;
@@ -29,6 +36,44 @@ a {
   flex-direction: column;
   align-items: center;
 }
+
+//<editor-fold desc="top">
+#top {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    opacity: 0.8;
+    transition: opacity 500ms, width 800ms;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .logo {
+    color: #444444;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    background-image: $img;
+    background-size: $imgSize;
+    background-position: 0 0;
+    &:hover {
+      width: 300px;
+    }
+  }
+  .feedback {
+    width: 35px;
+    height: 35px;
+    background-image: $img;
+    background-size: $imgSize;
+    background-position: 0 -60px;
+  }
+}
+
+//</editor-fold>
 
 #logo {
   width: 100%;

@@ -1,5 +1,7 @@
 @charset "UTF-8";
 /** author: Sheng JIANG date: 2017-09-07 */
+@font-face { font-family: 造字工房尚黑（非商用）常规体; src: url("../font/MFShangHei_Noncommercial-Regular.ttf"); }
+
 body { color: #333333; font-family: "Helvetica Neue", "Arial", "PingFang SC", "Microsoft Yahei", "SimSun", sans-serif; }
 
 h2 { font-size: 24px; margin: 20px 0; }
@@ -9,6 +11,18 @@ p { font-size: 16px; color: #666666; }
 a { text-decoration: none; color: inherit; }
 
 .everything { display: flex; flex-direction: column; align-items: center; }
+
+#top { width: 90%; margin: 20px auto; display: flex; justify-content: space-between; align-items: center; }
+
+#top a { opacity: 0.8; transition: opacity 500ms, width 800ms; }
+
+#top a:hover { opacity: 1; }
+
+#top .logo { color: #444444; position: relative; width: 60px; height: 60px; overflow: hidden; background-image: url(../img/nav.png); background-size: 400px; background-position: 0 0; }
+
+#top .logo:hover { width: 300px; }
+
+#top .feedback { width: 35px; height: 35px; background-image: url(../img/nav.png); background-size: 400px; background-position: 0 -60px; }
 
 #logo { width: 100%; height: 100px; }
 
