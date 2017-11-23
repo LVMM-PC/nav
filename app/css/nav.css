@@ -133,7 +133,7 @@ a { text-decoration: none; color: inherit; }
 
 .logo-i { color: #ff5301; font-size: 30px; font-weight: 700; }
 
-.explanation { width: 90%; color: #999; font-size: 12px; position: relative; }
+.explanation { max-width: 1400px; width: 90%; color: #999; font-size: 12px; position: relative; }
 
 .explanation p { float: left; font-size: 12px; line-height: 12px; }
 
