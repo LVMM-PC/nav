@@ -114,7 +114,7 @@ a { text-decoration: none; color: inherit; }
 
 .qr-code { margin: 25px; float: right; width: 148px; height: 148px; background-size: 148px; background-image: url(../img/qr-code.png); }
 
-.footer { width: 90%; max-width: 1400px; display: flex; height: 100px; flex-direction: column; align-items: center; justify-content: center; border-top: 1px solid #E3E3E3; }
+.footer { width: 100%; max-width: 1400px; display: flex; height: 100px; flex-direction: column; align-items: center; justify-content: center; color: #666; font-size: 12px; background: #fff; padding: 50px 0; }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) { /* 当设备像素比不小于1.5的时候... */
   .qr-code { background-size: 148px; background-image: url(../img/qr-code@2x.png); }
@@ -133,11 +133,11 @@ a { text-decoration: none; color: inherit; }
 
 .logo-i { color: #ff5301; font-size: 30px; font-weight: 700; }
 
-.explanation { width: 90%; color: #999; font-size: 12px; position: relative; }
+.explanation { font-size: 12px; position: relative; border-bottom: silver dotted 1px; padding: 0 10px 20px; margin-bottom: 30px; }
 
-.explanation p { float: left; font-size: 12px; line-height: 12px; }
+.explanation p { font-size: 12px; line-height: 12px; display: inline-block; margin-right: 20px; }
 
-.explanation a { float: right; line-height: 36px; text-decoration: none; color: #666; background-image: url(../img/m_icon.png); background-size: 9px 13px; background-repeat: no-repeat; background-position: left center; display: block; padding: 0 0 0 12px; }
+.explanation a { line-height: 36px; text-decoration: none; color: #666; background-image: url(../img/m_icon.png); background-size: 9px 13px; background-repeat: no-repeat; background-position: left center; display: inline-block; padding: 0 0 0 12px; }
 
 .explanation a:hover { opacity: 0.8; position: relative; }
 

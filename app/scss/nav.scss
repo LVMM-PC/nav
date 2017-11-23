@@ -326,14 +326,17 @@ a {
 }
 
 .footer {
-  width: 90%;
+  width: 100%;
   max-width: 1400px;
   display: flex;
   height: 100px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-top:1px solid #E3E3E3;
+  color:#666;
+  font-size:12px;
+  background: #fff;
+  padding:50px 0;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -399,17 +402,18 @@ only screen and (min-device-pixel-ratio: 1.5) {
   font-weight: 700;
 }
 .explanation{
-  width:90%;
-  color:#999;
   font-size:12px;
   position: relative;
+  border-bottom:silver dotted 1px;
+  padding:0 10px 20px;
+  margin-bottom:30px;
   p{
-    float:left;
     font-size:12px;
     line-height: 12px;
+    display: inline-block;
+    margin-right:20px;
   }
   a{
-    float:right;
     line-height: 36px;
     text-decoration: none;
     color: #666;
@@ -417,7 +421,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
     background-size: 9px 13px;
     background-repeat: no-repeat;
     background-position: left center;
-    display: block;
+    display: inline-block;
     padding:0 0 0 12px;
     &:hover{
     opacity: 0.8;
