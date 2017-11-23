@@ -1,7 +1,5 @@
 @charset "UTF-8";
 /** author: Sheng JIANG date: 2017-09-07 */
-@font-face { font-family: 造字工房尚黑（非商用）常规体; src: url("../font/MFShangHei_Noncommercial-Regular.ttf"); }
-
 body { color: #333333; font-family: "Helvetica Neue", "Arial", "PingFang SC", "Microsoft Yahei", "SimSun", sans-serif; }
 
 h2 { font-size: 24px; margin: 20px 0; }
