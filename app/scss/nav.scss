@@ -110,7 +110,7 @@ a {
 .main {
   width: 96%;
   max-width: 1400px;
-  margin: 0px 0 50px 0;
+  margin: 0px 0 0px 0;
   padding-top: 40px;
   background: #fff;
 }
@@ -124,7 +124,7 @@ a {
     font-size: 20px;
     color: #666;
     font-weight: 300;
-    margin:0 0 0 40px;
+    margin:0 0 0 30px;
   }
 }
 
@@ -298,14 +298,12 @@ a {
 .footer {
   width: 100%;
   display: flex;
-  height: 100px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color:#666;
   font-size:12px;
-  background: #fff;
-  padding:50px 0;
+  padding:20px 0;
 }
 
 @media (max-width: 1600px) {
@@ -359,14 +357,14 @@ a {
   color: #999;
   font-size:12px;
   position: relative;
-  border-bottom:silver dotted 1px;
-  padding:0 10px 20px;
-  margin-bottom:30px;
+  padding:0 0 0 50px;
+  margin:15px 0 50px;
+  width:95%;
   p {
     vertical-align: top;
     font-size:12px;
     display: inline-block;
-    margin: 8px 20px;
+    margin: 8px 0px;
     line-height: 20px;
   }
   a {
@@ -376,7 +374,7 @@ a {
     line-height: 36px;
     text-decoration: none;
     color: #666;
-    padding:0 12px 0 12px;
+    padding:0 0px 0 12px;
     i {
       display: block;
       width: 14px;
