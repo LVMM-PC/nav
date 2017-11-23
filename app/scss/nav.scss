@@ -35,6 +35,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background:#f9f7f6;
 }
 
 //<editor-fold desc="top">
@@ -90,13 +91,13 @@ a {
 
 #banner {
   background-image: url(../img/banner.jpg);
+  background-color:#fff;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: auto 100%;
-  width: 100%;
-  height: 500px;
-  margin: 0px 0 50px;
-  border-bottom: 1px solid #f0f0f0;
+  width: 90%;
+  height: 450px;
+  border-radius:8px;
 }
 
 .header {
@@ -114,35 +115,37 @@ a {
   width: 90%;
   max-width: 1400px;
   margin: 0px 0 50px 0;
+  padding-top:40px;
 }
 
 .section {
   h2 {
     font-weight: normal;
     line-height: 30px;
-    margin: 0 20px;
-    font-size: 18px;
+    margin: 0;
+    font-size: 20px;
     color: #666;
+    font-weight:300;
   }
 }
 
 .list {
-  background-color: #fff;
-  padding: 20px 0 0 20px;
+  padding: 10px 0 0 0;
   display: flex;
   flex-flow: row wrap;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .item {
   display: flex;
-  border-radius: 8px;
+  background: #fff;
+  border-radius: 6px;
   color: #333;
   padding: 20px;
   /*box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, .1), 0px 1px 2px rgba(0, 0, 0, .05);*/
   box-shadow: 0px 2px 8px 0px rgba(50, 86, 123, .16);
-  width: calc(100% / 3 - 60px);
-  margin: 0 20px 20px 0;
+  width: calc(100% / 3 - 80px);
+  margin: 0 40px 20px 0;
   transition: transform 100ms;
   .icon {
     width: 40px;
@@ -294,13 +297,14 @@ a {
 }
 
 .share {
-  display: flex;
+  display: /*flex*/none;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  color: #fff;
-  background-color: #15aef0;
+  color: #666;
+  border-radius:20px;
+  background-color: #fff;
   width: 90%;
   max-width: 1400px;
   margin: 0 0 50px 0;
@@ -333,6 +337,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-top:1px solid #E3E3E3;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -353,7 +358,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 @media (max-width: 1600px) {
   .item {
-    width: calc(100% / 3 - 60px);
+    width: calc(100% / 3 - 80px);
   }
 }
 
@@ -365,7 +370,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
     width: 90%;
   }
   .item {
-    width: calc(100% / 2 - 60px);
+    width: calc(100% / 2 - 80px);
   }
 }
 
@@ -376,7 +381,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
     width: 100%;
   }
   .item {
-    width: calc(100% / 1 - 60px);
+    width: calc(100% / 1 - 80px);
   }
 }
 
@@ -396,4 +401,42 @@ only screen and (min-device-pixel-ratio: 1.5) {
   color: #ff5301;
   font-size: 30px;
   font-weight: 700;
+}
+.explanation{
+  width:90%;
+  color:#999;
+  font-size:12px;
+  position: relative;
+  p{
+    float:left;
+    font-size:12px;
+    line-height: 12px;
+  }
+  a{
+    float:right;
+    line-height: 36px;
+    text-decoration: none;
+    color: #666;
+    background-image: url(../img/m_icon.png);
+    background-size: 9px 13px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    display: block;
+    padding:0 0 0 12px;
+    &:hover{
+    opacity: 0.8;
+    position: relative;  
+    }
+  }
+}
+.explanation a img{display: none;}
+.explanation a:hover img{
+  display: block; 
+  position: absolute;
+  width:120px;
+  bottom:30px;
+  right:0px;
+  z-index: 10;
+  border-radius: 5px;
+  box-shadow: 0 4px 20px rgba(3,3,3,.2);
 }
