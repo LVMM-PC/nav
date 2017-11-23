@@ -417,12 +417,22 @@ only screen and (min-device-pixel-ratio: 1.5) {
   .explanation {
     a {
       i {
-        background-size: 400px;
+        background-size: $imgSize;
         background-image: url(../img/nav@2x.png);
       }
     }
     .qr-code {
       background-image: url(../img/qr-code@2x.png);
+    }
+  }
+
+  #top {
+    .logo{
+      background-size: $imgSize;
+      background-image: url(../img/nav@2x.png);
+    }
+    .feedback{background-size: $imgSize;
+      background-image: url(../img/nav@2x.png);
     }
   }
 
