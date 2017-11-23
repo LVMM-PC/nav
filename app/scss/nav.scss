@@ -31,7 +31,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background:#f7f7f7;
+  background: #f7f7f7;
 }
 
 //<editor-fold desc="top">
@@ -87,13 +87,13 @@ a {
 
 #banner {
   background-image: url(../img/banner.jpg);
-  background-color:#fff;
+  background-color: #fff;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: auto 100%;
   width: 90%;
   height: 450px;
-  border-radius:8px;
+  border-radius: 8px;
 }
 
 .header {
@@ -111,7 +111,7 @@ a {
   width: 90%;
   max-width: 1400px;
   margin: 0px 0 50px 0;
-  padding-top:40px;
+  padding-top: 40px;
 }
 
 .section {
@@ -121,7 +121,7 @@ a {
     margin: 0;
     font-size: 20px;
     color: #666;
-    font-weight:300;
+    font-weight: 300;
   }
 }
 
@@ -292,64 +292,17 @@ a {
   background-image: url(../img/tags/wechat.png);
 }
 
-.share {
-  display: /*flex*/none;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  color: #666;
-  border-radius:20px;
-  background-color: #fff;
-  width: 90%;
-  max-width: 1400px;
-  margin: 0 0 50px 0;
-  font-size: 40px;
-  text-align: center;
-  a {
-    line-height: 50px;
-    margin: 25px 0 25px 0;
-  }
-}
-
-.qr-code-box {
-  margin: 0 0 50px 0;
-}
-
-.qr-code {
-  margin: 25px;
-  float: right;
-  width: 148px;
-  height: 148px;
-  background-size: 148px;
-  background-image: url(../img/qr-code.png);
-}
-
 .footer {
-  width: 90%;
-  max-width: 1400px;
+  width: 100%;
   display: flex;
   height: 100px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-top:1px solid #E3E3E3;
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-only screen and (min--moz-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5) {
-  /* 当设备像素比不小于1.5的时候... */
-
-  .qr-code {
-    background-size: 148px;
-    background-image: url(../img/qr-code@2x.png);
-  }
-
-  #banner {
-    background-image: url(../img/banner@2x.jpg);
-  }
-
+  color:#666;
+  font-size:12px;
+  background: #fff;
+  padding:50px 0;
 }
 
 @media (max-width: 1600px) {
@@ -398,41 +351,78 @@ only screen and (min-device-pixel-ratio: 1.5) {
   font-size: 30px;
   font-weight: 700;
 }
-.explanation{
-  width:90%;
-  color:#999;
+
+.explanation {
+  color: #999;
   font-size:12px;
   position: relative;
-  p{
-    float:left;
+  border-bottom:silver dotted 1px;
+  padding:0 10px 20px;
+  margin-bottom:30px;
+  p {
+    vertical-align: top;
     font-size:12px;
-    line-height: 12px;
+    display: inline-block;
+    margin: 8px 20px;
+    line-height: 20px;
   }
-  a{
-    float:right;
+  a {
+    vertical-align: top;
+    display: inline-flex;
+    align-items: center;
     line-height: 36px;
     text-decoration: none;
     color: #666;
-    background-image: url(../img/m_icon.png);
-    background-size: 9px 13px;
-    background-repeat: no-repeat;
-    background-position: left center;
-    display: block;
-    padding:0 0 0 12px;
-    &:hover{
+    padding:0 12px 0 12px;
+    i {
+      display: block;
+      width: 14px;
+      height: 14px;
+      background-image: url(../img/nav.png);
+      background-position: -40px -60px;
+    }
+    &:hover {
       opacity: 0.8;
       position: relative;
+      .qr-code {
+        display: block;
+      }
     }
   }
+  .qr-code {
+    display: none;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    bottom: 30px;
+    left: 13px;
+    z-index: 10;
+    border-radius: 5px;
+    box-shadow: 0 4px 20px rgba(3, 3, 3, .2);
+    background-image: url(../img/qr-code.png);
+    background-size: cover;
+  }
 }
-.explanation a img{display: none;}
-.explanation a:hover img{
-  display: block;
-  position: absolute;
-  width:120px;
-  bottom:30px;
-  right:0px;
-  z-index: 10;
-  border-radius: 5px;
-  box-shadow: 0 4px 20px rgba(3,3,3,.2);
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+  /* 当设备像素比不小于1.5的时候... */
+
+  #banner {
+    background-image: url(../img/banner@2x.jpg);
+  }
+
+  .explanation {
+    a {
+      i {
+        background-size: 400px;
+        background-image: url(../img/nav@2x.png);
+      }
+    }
+    .qr-code {
+      background-image: url(../img/qr-code@2x.png);
+    }
+  }
+
 }
