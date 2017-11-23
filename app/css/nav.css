@@ -138,4 +138,6 @@ a { text-decoration: none; color: inherit; }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) { /* 当设备像素比不小于1.5的时候... */
   #banner { background-image: url(../img/banner@2x.jpg); }
   .explanation a i { background-size: 400px; background-image: url(../img/nav@2x.png); }
-  .explanation .qr-code { background-image: url(../img/qr-code@2x.png); } }
+  .explanation .qr-code { background-image: url(../img/qr-code@2x.png); }
+  #top .logo { background-size: 400px; background-image: url(../img/nav@2x.png); }
+  #top .feedback { background-size: 400px; background-image: url(../img/nav@2x.png); } }
