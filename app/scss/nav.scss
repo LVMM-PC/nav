@@ -308,7 +308,7 @@ a {
 
 @media (max-width: 1600px) {
   .item {
-    width: calc(100% / 3 - 80px);
+    width: calc(100% / 3 - 100px);
   }
 }
 
@@ -320,7 +320,7 @@ a {
     width: 96%;
   }
   .item {
-    width: calc(100% / 2 - 80px);
+    width: calc(100% / 2 - 100px);
   }
 }
 
@@ -331,7 +331,7 @@ a {
     width: 96%;
   }
   .item {
-    width: calc(100% / 1 - 80px);
+    width: calc(100% / 1 - 100px);
   }
 }
 
