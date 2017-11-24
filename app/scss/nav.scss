@@ -41,6 +41,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width:1400px;
   a {
     opacity: 0.8;
     transition: opacity 500ms, width 800ms;
@@ -94,6 +95,7 @@ a {
   width: 96%;
   height: 450px;
   border-radius: 8px 8px 0 0;
+  max-width:1400px;
 }
 
 .header {
@@ -316,7 +318,7 @@ a {
 @media (max-width: 1200px) {
   .main,
   .share,
-  .footer {
+  .footer{
     width: 96%;
   }
   .item {
@@ -327,7 +329,8 @@ a {
 @media (max-width: 800px) {
   .main,
   .share,
-  .footer {
+  .footer
+   {
     width: 96%;
   }
   .item {
