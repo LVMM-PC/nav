@@ -123,7 +123,7 @@ a { text-decoration: none; color: inherit; }
 
 .logo-i { color: #ff5301; font-size: 30px; font-weight: 700; }
 
-.explanation { color: #999; font-size: 12px; position: relative; padding: 0 0 0 50px; margin: 15px 0 50px; width: 96%; }
+.explanation { display: flex; flex-wrap: wrap; color: #999; font-size: 12px; position: relative; padding: 0 50px 0 50px; margin: 15px 0 50px; box-sizing: border-box; width: 96%; }
 
 .explanation p { vertical-align: top; font-size: 12px; display: inline-block; margin: 8px 0px; line-height: 20px; }
 

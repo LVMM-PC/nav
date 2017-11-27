@@ -357,11 +357,14 @@ a {
 }
 
 .explanation {
+  display: flex;
+  flex-wrap: wrap;
   color: #999;
   font-size:12px;
   position: relative;
-  padding:0 0 0 50px;
+  padding:0 50px 0 50px;
   margin:15px 0 50px;
+  box-sizing: border-box;
   width:96%;
   p {
     vertical-align: top;
