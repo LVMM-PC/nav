@@ -199,6 +199,17 @@ a {
       }
     }
   }
+  .wechat-code {
+    cursor: default;
+    margin-top: -7px;
+  }
+  a {
+    &:hover {
+      .wechat-code {
+        display: block;
+      }
+    }
+  }
 }
 
 .tag-vue {
@@ -407,6 +418,7 @@ a {
 }
 
 .wechat-movie-calendar {
+  display: none;
   position: absolute;
   background-image: url(../img/wechat/movie-calendar.jpg);
   background-size: cover;

@@ -62,6 +62,10 @@ a { text-decoration: none; color: inherit; }
 
 .item .tags .tag.image { overflow: hidden; width: 28px; background-size: cover; box-shadow: 0 2px 6px 0 rgba(112, 128, 175, 0.2); }
 
+.item .wechat-code { cursor: default; margin-top: -7px; }
+
+.item a:hover .wechat-code { display: block; }
+
 .tag-vue { background-image: url(../img/tags/vue.png); }
 
 .tag-sass { background-image: url(../img/tags/sass.png); }
@@ -137,7 +141,7 @@ a { text-decoration: none; color: inherit; }
 
 .explanation .qr-code { display: none; position: absolute; width: 120px; height: 120px; bottom: 30px; left: 13px; z-index: 10; border-radius: 5px; box-shadow: 0 4px 20px rgba(3, 3, 3, 0.2); background-image: url(../img/qr-code.png); background-size: cover; }
 
-.wechat-movie-calendar { position: absolute; background-image: url(../img/wechat/movie-calendar.jpg); background-size: cover; width: 172px; height: 172px; border-radius: 5px; box-shadow: 0 4px 20px rgba(3, 3, 3, 0.2); }
+.wechat-movie-calendar { display: none; position: absolute; background-image: url(../img/wechat/movie-calendar.jpg); background-size: cover; width: 172px; height: 172px; border-radius: 5px; box-shadow: 0 4px 20px rgba(3, 3, 3, 0.2); }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) { /* 当设备像素比不小于1.5的时候... */
   #banner { background-image: url(../img/banner@2x.jpg); }
