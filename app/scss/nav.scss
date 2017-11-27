@@ -41,7 +41,6 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width:1400px;
   a {
     opacity: 0.8;
     transition: opacity 500ms, width 800ms;
@@ -95,7 +94,6 @@ a {
   width: 96%;
   height: 450px;
   border-radius: 8px 8px 0 0;
-  max-width:1400px;
 }
 
 .header {
@@ -111,22 +109,19 @@ a {
 
 .main {
   width: 96%;
-  max-width: 1400px;
-  margin: 0px 0 0px 0;
+  margin: 0;
   padding-top: 40px;
   background: #fff;
 }
 
 .section {
-  margin:0 20px;
+  margin: 0 20px;
   h2 {
-    font-weight: normal;
     line-height: 30px;
-    margin: 0;
     font-size: 20px;
     color: #666;
     font-weight: 300;
-    margin:0 0 0 30px;
+    margin: 0 0 0 30px;
   }
 }
 
@@ -144,9 +139,15 @@ a {
   color: #333;
   padding: 20px;
   /*box-shadow: 0px 1px 15px 1px rgba(0, 0, 0, .1), 0px 1px 2px rgba(0, 0, 0, .05);*/
+<<<<<<< HEAD
   box-shadow: 0px 2px 8px 0px rgba(50, 86, 123, .16);
   width: calc(100% / 3 - 80px);
   margin: 0 0px 20px 30px;
+=======
+  box-shadow: 0 2px 8px 0 rgba(50, 86, 123, .16);
+  width: calc(100% / 3 - 100px);
+  margin: 0 0 20px 30px;
+>>>>>>> a676bd2e5ebae85a4c2eb15b82f88a1859dcc884
   transition: transform 100ms;
   .icon {
     width: 40px;
@@ -165,6 +166,7 @@ a {
     font-size: 0;
     line-height: 20px;
     .title {
+      position: relative;
       font-size: 15px;
       display: inline;
     }
@@ -200,6 +202,18 @@ a {
         width: 28px;
         background-size: cover;
         box-shadow: 0 2px 6px 0 rgba(112, 128, 175, 0.2);
+      }
+    }
+  }
+  .wechat-code {
+    cursor: default;
+    margin-top: -7px;
+  }
+  a {
+    cursor: pointer;
+    &:hover {
+      .wechat-code {
+        display: block;
       }
     }
   }
@@ -303,9 +317,9 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color:#666;
-  font-size:12px;
-  padding:20px 0;
+  color: #666;
+  font-size: 12px;
+  padding: 20px 0;
 }
 
 @media (max-width: 1600px) {
@@ -318,7 +332,7 @@ a {
 @media (max-width: 1200px) {
   .main,
   .share,
-  .footer{
+  .footer {
     width: 96%;
   }
   .item {
@@ -329,8 +343,7 @@ a {
 @media (max-width: 800px) {
   .main,
   .share,
-  .footer
-   {
+  .footer {
     width: 96%;
   }
   .item {
@@ -360,17 +373,17 @@ a {
   display: flex;
   flex-wrap: wrap;
   color: #999;
-  font-size:12px;
+  font-size: 12px;
   position: relative;
-  padding:0 50px 0 50px;
-  margin:15px 0 50px;
+  padding: 0 50px 0 50px;
+  margin: 15px 0 50px;
   box-sizing: border-box;
-  width:96%;
+  width: 96%;
   p {
     vertical-align: top;
-    font-size:12px;
+    font-size: 12px;
     display: inline-block;
-    margin: 8px 0px;
+    margin: 8px 0;
     line-height: 20px;
   }
   a {
@@ -380,7 +393,7 @@ a {
     line-height: 36px;
     text-decoration: none;
     color: #666;
-    padding:0 0px 0 12px;
+    padding: 0 0 0 12px;
     i {
       display: block;
       width: 14px;
@@ -411,6 +424,17 @@ a {
   }
 }
 
+.wechat-movie-calendar {
+  display: none;
+  position: absolute;
+  background-image: url(../img/wechat/movie-calendar.jpg);
+  background-size: cover;
+  width: 172px;
+  height: 172px;
+  border-radius: 5px;
+  box-shadow: 0 4px 20px rgba(3, 3, 3, 0.2);
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
@@ -433,11 +457,12 @@ only screen and (min-device-pixel-ratio: 1.5) {
   }
 
   #top {
-    .logo{
+    .logo {
       background-size: $imgSize;
       background-image: url(../img/nav@2x.png);
     }
-    .feedback{background-size: $imgSize;
+    .feedback {
+      background-size: $imgSize;
       background-image: url(../img/nav@2x.png);
     }
   }
