@@ -204,6 +204,7 @@ a {
     margin-top: -7px;
   }
   a {
+    cursor: pointer;
     &:hover {
       .wechat-code {
         display: block;

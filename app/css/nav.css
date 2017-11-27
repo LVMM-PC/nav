@@ -64,6 +64,8 @@ a { text-decoration: none; color: inherit; }
 
 .item .wechat-code { cursor: default; margin-top: -7px; }
 
+.item a { cursor: pointer; }
+
 .item a:hover .wechat-code { display: block; }
 
 .tag-vue { background-image: url(../img/tags/vue.png); }
